@@ -1,0 +1,24 @@
+This is the text of a sample conference photography policy for
+conferences that are concerned about preventing harassing photography.
+It can be adapted to suit your particular conference however you'd like.
+
+For more in-depth information, including background on the problem
+and information about why a photography policy might be necessary,
+see:
+
+http://geekfeminism.wikia.com/wiki/Resources_for_conference_organizers
+
+
+SAMPLE POLICY
+
+Do not photograph, video, or audio record anyone at (conference) without
+their express permission, explicitly sought or given in advance. Most
+attendees will have (some visible marker) showing their preference for
+photography or recording:
+
+Green: Photographs always okay
+Yellow: Ask before photographing
+Red: Photographs never okay, don't ask
+
+If no (marker) is visible, assume "ask before photographing."
+
