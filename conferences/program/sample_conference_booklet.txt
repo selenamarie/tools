@@ -1,0 +1,228 @@
+Welcome to [conference]!
+
+[Conference description]. This document includes all the information you will need as an attendee of [conference]. We are glad to see you at [conference] and hope you have a great time!
+
+Table of Contents
+
+[Insert table of contents]
+
+Date and location
+
+[Conference date, time, specific location including address, and general location.]
+
+[Map of location]
+
+Local travel
+
+[Public transit info, including nearby stops, web sites, phone numbers, fares, etc.]
+
+[Taxi and/or shuttle information, including URL and phone number of recommended companies.]
+
+[Useful local advice: common scams and how to avoid them, places to avoid, etc.]
+
+Schedule
+
+The schedule is online at: [URL]
+
+[Schedule]
+
+Food
+
+Food information can be found at: [URL]
+
+A local dining guide can be found at: [URL]
+
+[Describe conference food, food restrictions catered to, timing, cost if any.]
+
+Conference events
+
+[Describe conference events, including location, date/time, how to travel there, maps, recommended attire if any, food/drink, what to bring, etc.]
+
+Emergency and medical contact information
+
+Emergency: [phone number]
+
+Nearest emergency room:
+
+[Name, address, phone number, URL]
+
+Building security: [phone number or other contact info]
+
+Sexual assault crisis hotline: [phone number]
+
+Mental health crisis hotline: [phone number]
+
+Other medical care [health clinic without an appointment]:
+
+[Name, address, phone number, URL]
+
+Nearest pharmacy:
+
+[Name, address, phone number, URL]
+
+Unconference basics
+
+[If this is an unconference]
+
+[conference] is an unconference, in which the content of the conference is collaboratively created by the participants on the day of the conference. In an unconference, sessions are suggested by the attendees on the day of the conference, and most sessions are round-table discussions (though they can be organized any way the participants like). Very few sessions are organized as one speaker or use prepared slides.
+
+Each day begins with an opening session in which people suggest session topics and organize session times and locations collaboratively. There are no pre-planned talks, other than the daily opening and closing sessions. Everyone is free to leave or join any session whenever they please. In fact, an important role is often called being a "butterfly" - deliberately moving from session to session during the sessions to cross-polinate discussion.
+
+In practice, your day will look something like this:
+
+Attend opening session and listen to announcements
+Listen to and suggest topics during session organization session
+Go to the schedule wall and find a place for your session in the schedule
+Attend and participate in sessions that sound interesting to you
+Help record session outcomes on wikis
+Attend closing session and participate in report-out
+You are not required to propose any sessions. If you do propose a session, you do not have to lead it - someone else will step up. Often the best topics are proposed by people who don't know much about the topic and want to learn more from other people who join the session.
+The most important rule for an unconference is to try to always be doing something you enjoy. This is how we know we are doing something useful. If you are not enjoying a session, you can:
+
+Leave the session (always allowed in every situation)
+Speak up and change the discussion
+Start your own session
+Tell the organizers if you are uncomfortable with someone's behavior
+Depending on the number of sessions proposed, we may have more proposals than session time slots available. In that case, sessions with the least number of people interested in them will not be scheduled. Extremely popular sessions may run several times so that people don't have to skip other sessions they would like to attend.
+Lightning talks
+
+[Include if having lightning talks]
+
+[conference] will feature 10 lightning talks [at date/times]. Lightning talks are short talks, very strictly timed, one after the other without question time. They will be 90 second slots, and the timing will be strict. There will be up to [N] of them.
+
+Your talk may have any structure: it could be a talk, a song, a performance piece, or a demonstration. It can have one presenter or more than one. The limits are:
+
+It must take no more than 90 seconds.
+if you are going to display an image or slide you can only display at most one image or slide, it will be the same one throughout the talk, and you won't have access to a mouse or keyboard.
+The theme for the lightning talks is "Interests, passions and hobbies." We're keen to hear about your interests outside the [conference subject].
+There are a few limitations on topic:
+No recruiting please (ie no "come and work at COMPANY").
+No advertisements for commercial projects or products.
+Since this is a plenary session without alternatives for people to attend if they are uncomfortable or uninterested, please keep your content and images suitable for a wide audience: specifically no discussion of sex, pornography and no discriminatory language, even if permitted on other spaces.
+[Instructions on how to submit talks and information on how talks will be selected.]
+Session role guides
+
+Sessions are organized by consensus and evolution, with each person doing what seems necessary as it comes up. However, most discussions work better when certain roles are filled by at least one participant. To help people feel confident in assuming these roles, we have printed cards with role guides, one for each role for each session room. We suggest asking for volunteers to fill each role at the beginning of the meeting by taking one role card.
+
+A brief summary of the roles:
+
+Facilitator: Starts session, guides discussion, keeps session on-topic
+Gatekeeper: Helps shy/quiet people get a chance to speak, stops derailment
+Note-taker: Takes notes on important points, records information for later use
+Timekeeper: Ends session in a timely manner
+Tips for improving group discussion
+[Guidelines for making group discussion better. An example is here.]
+
+Tags/hash tags/etc.
+
+[Specify hash tags.]
+
+Chat
+
+[Specify chat information for conference if anyway: IRC server, etc.]
+
+[Optional IRC information below.]
+
+We recommend blocking private messages:
+
+http://freenode.net/faq.shtml#spambots
+
+If you don't know how to use IRC, start here:
+
+http://www.irchelp.org/irchelp/irctutorial.html
+
+Documenting sessions
+
+We hope that many [conference] sessions will be immortalized through publicly available documentation. Even if a session doesn't produce a long-term public document, taking notes is often useful. [However, we have strict confidentiality rules to keep the discussion active at [conference].] This section gives suggestions and policies for documenting what goes on at [conference).
+
+[See our "Reporting/blogging/social media policy" for details, but the short version is: No attribution without permission: You can write about what people said but not who said it unless you have explicit permission from the speaker(s].]
+
+We strongly encourage each session to have at least one note-keeper, who takes notes on a public wiki page or similar [- just remember not to use names without permission].
+
+License
+
+We suggest (but do not insist) that you license outcomes of conference sessions as CC-BY-SA [without attribution to [conference] attendees unless you get permission to use the authors' names].
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+Note-taking
+
+For short-term collaborative notes, we suggest using PiratePad and adding a link to your session's notes to the main conference page:
+
+[PiratePad URL]
+
+Long-term documentation
+
+[Instructions for long-term documentation on a wiki or other place.]
+
+Attendee guidelines and policies
+
+[conference] has several policies designed to make the event more enjoyable and productive for participants. Please read and follow these policies, and help us make [conference] amazing!
+
+Photography/video/audio recording policy
+
+[Sample policy included below, see more about why photography policies are necessary at our page on harassment via photography and how to implement them at Sample photography/recording policy.]
+
+Do not photograph, video, or audio record anyone at [conference] without their express permission, explicitly sought or given in advance. Most attendees will have [some visible marker] showing their preference for photography or recording:
+
+Green: Photographs always okay
+Yellow: Ask before photographing
+Red: Photographs never okay, don't ask
+If no [marker] is visible, assume "ask before photographing."
+Reporting/blogging/social media policy
+
+[Modify to reflect conference policy.]
+
+[[conference] attendees need the freedom to say controversial things without worrying about their statements becoming public without their permission. To that end, [we did not invite any outside press or reporters, and] no one is allowed to publicly attribute your comments to you unless you give them express permission.]
+
+We do want to spread the word about what happened at [conference], so that everyone can benefit and to make future conferences more successful. We strongly encourage writing about or telling people about [conference] sessions on blogs, social media, news stories, and other media as long as posters follow these rules:
+
+No attribution without permission: You can write about what people said but not who said it unless you have explicit permission from the speaker(s).
+Each session can decide to adopt different rules (e.g., always public, or always private) as long as it informs all participants who join the session.
+Please do not "live tweet" sessions excessively - it can make people feel like they are speaking in public, and it distracts other people.
+Anti-harassment policy
+[This is an example conference anti-harassment policy. We have a lot of documentation on adopting, writing, and implementing a policy at Conference anti-harassment resources.]
+
+[conference] is dedicated to providing a harassment-free conference experience for everyone [, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion [insert any other specific concerns here]]. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference [without a refund] at the discretion of the conference organizers.
+
+Harassment includes offensive verbal comments [related to gender, sexual orientation, disability, physical appearance, body size, race, religion, [your specific concern here]], sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.
+
+[Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.]
+
+If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference [with no refund]. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. [Conference staff can be identified by t-shirts/special badges/head sets.]
+
+Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
+
+[Email address for organizers]
+
+[Phone number for conference security or organizers]
+
+[Phone number for hotel/venue security]
+
+[Local law enforcement]
+
+[Local sexual assault hot line]
+
+[Local emergency and non-emergency medical]
+
+[Local taxi company]
+
+We expect participants to follow these rules at all conference venues and conference-related social events.
+
+After the conference
+
+[Information on how to get information on future conferences, news from the organizers, keep in touch with other attendees, etc.]
+
+Blogging
+
+Please write blog posts about your conference experience [respecting the rule of not using people's names unless you have permission] and send a link to your blog post to [notification method]. Use "[conference tag]" as a tag.
+
+About [conference organizers]
+
+[Include some information about the conference organizers, including credits for volunteers and organizers.]
+
+Sponsors
+
+[conference] would not be possible without the generous support of our sponsors. We thank our sponsors!
+
+[Sponsor levels, names, logos]
