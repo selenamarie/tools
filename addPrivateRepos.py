@@ -135,13 +135,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Add a repo to git')
     parser.add_argument('--prompt', action='store_true',
                        help='prompt for new account username(s) you are adding a private repo for')
-    parser.add_argument('-n', '--newaccounts', nargs='+',
+    parser.add_argument('-n', '--newaccounts', nargs='+', dest='newaccounts',
                        help='new account username(s) you are adding a private repo for')
-    parser.add_argument('-u', '--username',
+    parser.add_argument('-u', '--username', dest='username',
                        help='your github username')
-    parser.add_argument('-p', '--password',
+    parser.add_argument('-p', '--password', dest='password',
                        help='your github password')
-    parser.add_argument('--list-repos', action='store_true',
+    parser.add_argument('--list-repos', action='store_true', dest='list_repos',
                        help='list existing repos')
 
     args,other = parser.parse_known_args()
