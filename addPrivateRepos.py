@@ -70,6 +70,7 @@ def create_repos(args):
         repo_names.append(str(r.name))
 
     for user in usernames:
+        user = user.lower()
         data = {
               "name": user ,
               "permission": "admin",
@@ -96,11 +97,18 @@ def create_repos(args):
         else:
             print "Repo %s already exists" % user
 
-        # Add the member into the team
-        gh.orgs.teams.add_member(team.id, user)
-        print "Added %s to team %s" % (user,user)
+        team_members = gh.orgs.teams.list_members(team.id).all()
+        member_names = []
+        for m in team_members:
+            member_names.append(str(m.login))
+        # Add the member into the team if not already
+        if user not in member_names:
+            gh.orgs.teams.add_member(team.id, user)
+            print "Added %s to team %s" % (user,user)
+        else:
+            print "%s already in team %s" % (user, team.name)
 
-    print "\n== ALL DONE! =="
+        print "\n== ALL DONE! =="
 
 def prompt(args):
     usernames = []
