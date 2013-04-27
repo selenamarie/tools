@@ -44,10 +44,12 @@ def list_repos():
     for team in existing_teams:
         print team.name
 
-def create_repos(args):
-    # ADD YOUR LIST OF NAMES HERE
-    # TODO: make this better, I'll set up argparse in v0.2 unless someone has a better idea
+def getTeamID(teams, name):
+    for team in teams:
+        if team.name == name.lower():
+            return team
 
+def create_repos(args):
     usernames = args.newaccounts
 
     gh = connect()
@@ -87,7 +89,8 @@ def create_repos(args):
             team = gh.orgs.teams.create(org, data)
             print "Created a team for %s in %s" % (user, org)
         else:
-            print "Team %s already exists" % user
+            team = getTeamID(existing_teams,user)
+            print "Team %s already exists (id: %s)" % (user, team.id)
 
         # Step 3 - create a repo of the user's name if not already
         if user not in repo_names:
@@ -127,19 +130,17 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Add a repo to git')
     parser.add_argument('--prompt', action='store_true',
                        help='prompt for new account username(s) you are adding a private repo for')
-    parser.add_argument('--newaccounts', nargs='+',
+    parser.add_argument('-n', '--newaccounts', nargs='+',
                        help='new account username(s) you are adding a private repo for')
-    parser.add_argument('--username',
+    parser.add_argument('-u', '--username',
                        help='your github username')
-    parser.add_argument('--password',
+    parser.add_argument('-p', '--password',
                        help='your github password')
-    parser.add_argument('--list_repos', action='store_true',
+    parser.add_argument('--list-repos', action='store_true',
                        help='list existing repos')
 
-    args = parser.parse_args()
+    args,other = parser.parse_known_args()
 
-    if args.username and args.password and args.create_token:
-        create_token(args)
     if args.username and args.password:
         create_config(args)
     elif args.newaccounts:
