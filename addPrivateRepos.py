@@ -60,9 +60,11 @@ def create_repos(args):
     existing_teams = gh.orgs.teams.list(org).all()
     for team in existing_teams:
         team_names.append(str(team.name))
+
     privacyfans = gh.orgs.teams.list_members(TEAM_ID).all()
     for p in privacyfans:
         pf_names.append(str(p.login))
+
     repos = gh.orgs.teams.list_repos(OWNERS).all()
     for r in repos:
         repo_names.append(str(r.name))
@@ -100,8 +102,23 @@ def create_repos(args):
 
     print "\n== ALL DONE! =="
 
+def prompt(args):
+    usernames = []
+    print "Please give usernames, one username per line. Hit return when done."
+
+    name = None
+    while name != '':
+        name = raw_input('Username: ')
+        name != '' and usernames.append(name)
+
+    print "Adding users: " + ' '.join(usernames)
+    args.newaccounts = usernames
+    return args
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Add a repo to git')
+    parser.add_argument('--prompt', action='store_true',
+                       help='prompt for new account username(s) you are adding a private repo for')
     parser.add_argument('--newaccounts', nargs='+',
                        help='new account username(s) you are adding a private repo for')
     parser.add_argument('--username',
@@ -113,9 +130,14 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    if args.username and args.password and args.create_token:
+        create_token(args)
     if args.username and args.password:
         create_config(args)
     elif args.newaccounts:
+        create_repos(args)
+    elif args.prompt:
+        args = prompt(args)
         create_repos(args)
     elif args.list_repos:
         list_repos()
