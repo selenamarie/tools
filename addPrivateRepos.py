@@ -40,14 +40,43 @@ def connect():
 def list_repos():
     gh = connect()
     org = ORG
-    existing_teams = gh.orgs.teams.list(org).all()
-    for team in existing_teams:
-        print team.name
+    existing_repos = gh.orgs.teams.list_repos(OWNERS).all()
+    for repo in existing_repos:
+        print repo.name
 
 def getTeamID(teams, name):
     for team in teams:
         if team.name == name:
             return team
+
+def list_teams():
+    gh = connect()
+    org = ORG
+    existing_teams = gh.orgs.teams.list(org).all()
+    for team in existing_teams:
+        print team.name
+
+def fix_permissions(args):
+    gh = connect()
+    org = ORG
+    existing_teams = gh.orgs.teams.list(org).all()
+    if args.perm in ('pull', 'push', 'admin'):
+        print "Correct perm selection (%s), updating:" % args.perm
+        for team in existing_teams:
+            print team.name
+            if team.name not in ('Owners', 'hackerhive'):
+                data = {
+                    'name': team.name,
+                    'permission': args.perm
+                }
+                try:
+                    team_updated = gh.orgs.teams.update(team.id, data)
+                    if team_updated.permission == args.perm:
+                        print "Successfully edited team '%s' to %s permissions." % (team.name, args.perm)
+                except Exception as e:
+                    print e
+    else:
+        print "Error: Invalid permission for team - no changes made."
 
 def create_repos(args):
     usernames = args.newaccounts
@@ -147,11 +176,19 @@ if __name__ == '__main__':
                        help='your github password')
     parser.add_argument('--list-repos', action='store_true', dest='list_repos',
                        help='list existing repos')
+    parser.add_argument('--list-teams', action='store_true', dest='list_teams',
+                       help='list existing teams')
+    parser.add_argument('--fix-permissions', action='store_true', dest='fix_perms',
+                       help='put all team members to push only, not admin')
+    parser.add_argument('--permission', dest='perm',
+                       help='put all teams to this perm')
 
     args,other = parser.parse_known_args()
 
     if args.username and args.password:
         create_config(args)
+    elif args.fix_perms and args.perm:
+        fix_permissions(args)
     elif args.newaccounts:
         create_repos(args)
     elif args.prompt:
@@ -159,6 +196,8 @@ if __name__ == '__main__':
         create_repos(args)
     elif args.list_repos:
         list_repos()
+    elif args.list_teams:
+        list_teams()
     else:
         print "Nothing to do!"
 
