@@ -46,7 +46,7 @@ def list_repos():
 
 def getTeamID(teams, name):
     for team in teams:
-        if team.name == name.lower():
+        if team.name == name:
             return team
 
 def create_repos(args):
@@ -77,32 +77,32 @@ def create_repos(args):
             user = gh.users.get(username.lower())
 
             data = {
-                  "name": user.login ,
+                  "name": user.login,
                   "permission": "admin",
             }
 
             # Step 1 - add users to team 'privacyfans' if not already
             if user.login not in pf_names:
                 gh.orgs.teams.add_member(TEAM_ID,user.login)
-                print "Added: %s to 'privacyfans' team" % user.login
+                print "Step 1/4 complete: added %s to 'privacyfans' team" % user.login
             else:
-                print "%s already in team privacyfans" % user.login
+                print "Step 1/4 skipped: %s already in team privacyfans" % user.login
 
             # Step 2 - create a team of the user's name if not already
             if user.login not in team_names:
                 team = gh.orgs.teams.create(org, data)
-                print "Created a team for %s in %s" % (user.login, org)
+                print "Step 2/4 complete: created a team for %s in %s" % (user.login, org)
             else:
                 team = getTeamID(existing_teams,user.login)
-                print "Team %s already exists (id: %s)" % (user.login, team.id)
+                print "Step 2/4 skipped: team %s already exists (id: %s)" % (user.login, team.id)
 
             # Step 3 - create a repo of the user's name if not already
             if user.login not in repo_names:
                 gh.repos.create(dict(name=user.login, team_id=team.id, private=True, auto_init=True),
                 in_org=org)
-                print "Created a repo for %s in %s" % (user.login, org)
+                print "Step 3/4 complete: created a repo for %s in %s" % (user.login, org)
             else:
-                print "Repo %s already exists" % user.login
+                print "Step 3/4 skipped: repo %s already exists" % user.login
 
             team_members = gh.orgs.teams.list_members(team.id).all()
             member_names = []
@@ -111,12 +111,16 @@ def create_repos(args):
             # Add the member into the team if not already
             if user.login not in member_names:
                 gh.orgs.teams.add_member(team.id, user.login)
-                print "Added %s to team %s" % (user.login, team.name)
+                print "Step 4/4 complete: added %s to team '%s'" % (user.login, team.name)
             else:
-                print "%s already in team %s" % (user.login, team.name)
+                print "Step 4/4 skipped: %s already in team %s" % (user.login, team.name)
         except Exception as e:
-            print e
-            print "User does not exist, skipping %s" % username
+            if "User does not exist" in e.message:
+                print "User %s does not exist, skipping" % username
+            elif "team exists" in e.message:
+                print "%s already has team" % username
+            else:
+                print e.message
 
 def prompt(args):
     usernames = []
