@@ -78,7 +78,7 @@ def create_repos(args):
 
             data = {
                   "name": user.login,
-                  "permission": "admin",
+                  "permission": "push",
             }
 
             # Step 1 - add users to team 'privacyfans' if not already
